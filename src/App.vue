@@ -1,6 +1,7 @@
 <script setup>
 import HomeProp from './components/HomeProp.vue'
 import ListFonctionMode from "@/components/ListFonctionMode.vue";
+import GifMeal from "@/components/icons/GifMeal.vue";
 </script>
 
 <template>
@@ -12,6 +13,7 @@ import ListFonctionMode from "@/components/ListFonctionMode.vue";
   </header>
   <main>
     <section class="container">
+    <GifMeal v-if="$route.path === '/'"></GifMeal>
       <router-view />
     </section>
   </main>
